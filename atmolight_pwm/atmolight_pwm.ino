@@ -70,7 +70,7 @@ bool readData()
         {
             int count = read();
             
-            if (count = 0x0F) // Atmo-Classic send 5 RGB channels (5 * 3 == 15)
+            if (count == 0x0F) // Atmo-Classic send 5 RGB channels (5 * 3 == 15)
             {
                 for (int i = 0; i < 5; i++)
                 {
